@@ -1,0 +1,158 @@
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10px;
+  background-color: #ecf2f8;
+  width: 375px;
+  gap: 10px;
+}
+.testimonial {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px linear-gradient(to right, #948e99, #2e1437);
+  justify-content: space-between;
+  /* position: relative; */
+}
+.testimonial h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+/* .testimonial::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom right, #ff3d00 32%, #0400ff 86% );
+  transform: translate3d(0px, 0px, 0) scale(1.04);
+  filter: blur(50px);
+  opacity: 1;
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+.testimonial::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+} */
+#main-left {
+  display: inline-grid;
+  gap: 10px;
+}
+#top {
+  display: inline-grid;
+  gap: 10px;
+}
+#bottom {
+  display: inline-grid;
+  gap: 10px;
+}
+
+#card-1 {
+  /* background: linear-gradient(to right, #ff00cc, #333399); */
+  background: linear-gradient(to bottom left, #834d9b, #d04ed6);
+  color: white;
+  position: relative;
+}
+#quote {
+  position: absolute;
+  right: 7%;
+  top: 10px;
+  z-index: 0;
+  filter: blur(5px);
+  /* filter: opacity(35%); */
+}
+
+#card-2 {
+  background: linear-gradient(to bottom left, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+#card-3,
+#card-5 {
+  background-color: white;
+}
+#card-4 {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white;
+}
+#name {
+  font-size: 15px;
+  margin: 0;
+}
+#verified {
+  opacity: 50%;
+  font-size: 13px;
+  margin: 0;
+}
+#review {
+  opacity: 70%;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.header img {
+  border-radius: 50%;
+  border: 1px solid rgb(62, 50, 33);
+}
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+.txt {
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+@media (min-width: 576px) {
+  body {
+    flex-direction: row;
+    justify-content: center;
+    width: 1440px;
+  }
+  #main-left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65%;
+  }
+
+  #card-5 {
+    flex-basis: 17%;
+  }
+  #top {
+    display: flex;
+    flex-basis: 50%;
+  }
+  #bottom {
+    display: flex;
+    flex-basis: 50%;
+  }
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #card-2,
+  #card-3 {
+    flex-basis: 30%;
+  }
+  #card-1,
+  #card-4 {
+    flex-basis: 70%;
+  }
+}
